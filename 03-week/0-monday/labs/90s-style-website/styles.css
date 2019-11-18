@@ -1,0 +1,25 @@
+.menu {
+  background-color: green;
+  font-size: 20;
+}
+
+.images {
+  height: 300px;
+  width: 472px;
+}
+
+.text {
+  font-size: 30;
+  background-color: green;
+  color: white;
+}
+
+.home-images {
+  height: 350px;
+  width: 472px;
+}
+
+.movie-images {
+  height: 455px;
+  width: 472px;
+}

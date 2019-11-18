@@ -1,0 +1,22 @@
+body {
+  background-color: greenyellow;
+}
+
+.cars {
+  height: 200px;
+  width: 300px;
+}
+
+.models {
+  background-color: black;
+  color: white;
+  height: 55px;
+  width: 200px;
+}
+
+.prices {
+  background-color: white;
+  color: black;
+  height: 55px;
+  width: 200px;
+}
