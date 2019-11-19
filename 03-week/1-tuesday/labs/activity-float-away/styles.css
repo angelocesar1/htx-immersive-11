@@ -1,0 +1,10 @@
+.banner {
+  width: 500px;
+  height: 500px;
+  float: left;
+  margin: 20px 20px 10px 10px;
+}
+
+p {
+  font-size: 20px;
+}

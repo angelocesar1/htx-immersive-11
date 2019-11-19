@@ -1,0 +1,50 @@
+.block {
+  background-color: greenyellow;
+}
+
+.inline {
+  background-color: rgb(236, 98, 98);
+  position: inline;
+}
+
+.inline-block {
+  background-color: rgb(236, 98, 98);
+  position: inline-block;
+  width: 200px;
+  height: 50px;
+}
+
+.margin {
+  background-color: orange;
+  margin: 30px;
+}
+
+.padding {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.absolute {
+  background-color: lightpink;
+  position: absolute;
+  top: 400px;
+  right: 100px;
+  width: 100px;
+  height: 220px;
+}
+
+.relative {
+}
+
+.div-div {
+  background-color: yellow;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.div {
+  background-color: blueviolet;
+  position: absolute;
+  top: 40px;
+}
