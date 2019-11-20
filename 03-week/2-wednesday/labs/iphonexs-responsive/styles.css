@@ -15,10 +15,6 @@
 }
 
 body {
-  /* background-image: url("iphone-horizontal.png"); */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   height: 100%;
   margin: 0;
 }
