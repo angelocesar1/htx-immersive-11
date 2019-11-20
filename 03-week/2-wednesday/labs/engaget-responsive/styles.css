@@ -14,10 +14,19 @@
   }
 
   div img {
-    width: 80%;
+    height: 400px;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
   }
 }
 
+@media (min-width: 551px) {
+  div img {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+  }
+}
 #menu {
   background-color: black;
   color: white;
@@ -41,12 +50,6 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-div img {
-  height: 200px;
-  width: 200px;
-  margin: 10px;
 }
 
 div label {
