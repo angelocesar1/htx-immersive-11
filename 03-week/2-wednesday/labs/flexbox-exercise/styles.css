@@ -1,0 +1,25 @@
+#menu {
+  background-color: orange;
+  color: white;
+  display: flex;
+  margin: 10px;
+  justify-content: space-around;
+}
+
+#car-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#car-images div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+}
+
+#car-images img {
+  width: 200;
+  height: 200;
+}
