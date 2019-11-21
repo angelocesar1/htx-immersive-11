@@ -1,0 +1,56 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: 50px;
+}
+
+.one {
+  background-color: orange;
+}
+
+.two {
+  background-color: lightblue;
+}
+
+.three {
+  background-color: aquamarine;
+}
+
+.four {
+  background-color: lightgreen;
+  grid-column: 1/4;
+}
+
+.five {
+  background-color: blue;
+}
+
+.six {
+  background-color: red;
+}
+
+.seven {
+  background-color: purple;
+}
+
+.eight {
+  background-color: black;
+  color: white;
+  grid-column: 1/4;
+}
+
+.second-wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 1/4;
+}
+
+.nine {
+  background-color: maroon;
+}
+
+.ten {
+  background-color: teal;
+}
