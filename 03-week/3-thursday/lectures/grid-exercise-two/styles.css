@@ -1,0 +1,57 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 80px;
+}
+
+.one {
+  background-color: yellow;
+}
+
+.two {
+  background-color: blue;
+}
+
+.nested-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column: 1/4;
+  grid-auto-rows: 80px;
+}
+
+.three {
+  background-color: orange;
+  grid-row: 1/2;
+}
+
+.four {
+  background-color: purple;
+  grid-row: 1/2;
+}
+
+.five {
+  background-color: pink;
+  grid-row: 1/2;
+}
+
+.nested-row .six {
+  background-color: grey;
+  grid-row: 1/3;
+}
+
+.nested-second-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column: 1/4;
+  grid-auto-rows: 80px;
+}
+
+.seven {
+  background-color: green;
+  grid-row: 1/2;
+}
+
+.eight {
+  background-color: lightblue;
+  grid-column: 2/4;
+}
