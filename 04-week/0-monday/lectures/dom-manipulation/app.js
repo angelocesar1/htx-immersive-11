@@ -5,7 +5,7 @@ let addTaskButton = document.getElementById("addTaskButton");
 let taskNameTextBox = document.getElementById("taskNameTextBox");
 
 // get access to ul
-let taskListUL = document.getElementById("taskListUL");
+let taskListUl = document.getElementById("taskListUl");
 
 // attach onclick event to the button
 addTaskButton.addEventListener("click", function() {
@@ -14,14 +14,14 @@ addTaskButton.addEventListener("click", function() {
   let taskName = taskNameTextBox.value;
   let btnRemove = document.createElement("button");
   btnRemove.innerHTML = "Remove";
-  LiItem.appendChild(btnRemove);
   // create li element
   let liItem = document.createElement("li");
+  liItem.appendChild(btnRemove);
   // set inner html of LiItem
   liItem.innerHTML = taskName;
   console.log(liItem);
 
-  textListUL.appendChild(LiItem);
+  taskListUl.appendChild(liItem);
   // adding the same liItem to document will remove it from the UL
   document.body.appendChild(liItem);
 });
