@@ -7,25 +7,23 @@ let postsRef = root.child("posts");
 
 let postTitleTextBox = document.getElementById("postTitleTextBox");
 let postBodyTextBox = document.getElementById("postBodyTextBox");
-
-let posts = [];
+let postListUl = document.getElementById("postListUl");
 
 function displayPosts(posts) {
   let postItems = posts.map(posts => {
-    return `<li>${posts.title}</li>`
+    return `<li>${post.title}</li>`;
   });
 
-  postListUl.innerHTML = postItems.join('');
+  postListUl.innerHTML = postItems.join("");
 }
 
 function setupObservers() {
+  postsRef.on("child_added", snapshot => {
+    let post = { key: snapshot.key, ...snapshot.val() };
+    console.log(post);
+  });
 
-postsRef.on('child_added',(snapshot) => {
-    console.log(snapshot.val())
-})
-
-
-/*
+  /*
   postsRef.on("value", snapshot => {
     let posts = [];
 
@@ -40,6 +38,8 @@ postsRef.on('child_added',(snapshot) => {
   });
 }
 */
+}
+
 let savePostButton = document.getElementById("savePostButton");
 savePostButton.addEventListener("click", () => {
   let title = postTitleTextBox.value;
@@ -52,5 +52,6 @@ savePostButton.addEventListener("click", () => {
   });
 });
 
+setupObservers();
 // Blog
 // POST and COMMENTS
